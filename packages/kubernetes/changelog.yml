@@ -1,4 +1,9 @@
 # newer versions go on top
+- version: "1.44.0"
+  changes:
+    - description: Adding kube-state-metrics kubernetes.deployment.status
+      type: enhancement
+      link: https://github.com/elastic/integrations/pull/6603
 - version: "1.43.0"
   changes:
     - description: Expand index pattern for adHocDataviews for CCS use case
