@@ -11,7 +11,7 @@ categories:
   - kubernetes
 release: ga
 conditions:
-  kibana.version: "^8.8.2"
+  kibana.version: "^8.8.0"
 screenshots:
   - src: /img/metricbeat_kubernetes_overview.png
     title: Metricbeat Kubernetes Overview
