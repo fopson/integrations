@@ -570,7 +570,7 @@ processors:
       target_field: file.hash
       if: |-
         ctx?._temp?.hashes != null &&
-        ["6", "7", "15"].contains(ctx.event.code)
+        ["6", "7", "15", "29"].contains(ctx.event.code)
   - rename:
       field: file.hash.imphash
       target_field: file.pe.imphash
@@ -1343,7 +1343,6 @@ processors:
         - winlog.event_data.Hash
         - winlog.event_data.Hashes
         - winlog.event_data.TargetObject
-        - winlog.event_data.Details
         - winlog.time_created
         - winlog.level
       ignore_failure: true
